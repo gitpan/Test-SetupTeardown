@@ -1,0 +1,48 @@
+{
+   "abstract" : "Minimalist package to simplify writing unit tests with setup and teardown methods",
+   "author" : [
+      "Fabrice Gabolde <fabrice.gabolde@uperto.com>"
+   ],
+   "dynamic_config" : 1,
+   "generated_by" : "Module::Build version 0.4003, CPAN::Meta::Converter version 2.120921",
+   "license" : [
+      "restricted"
+   ],
+   "meta-spec" : {
+      "url" : "http://search.cpan.org/perldoc?CPAN::Meta::Spec",
+      "version" : "2"
+   },
+   "name" : "Test-SetupTeardown",
+   "prereqs" : {
+      "build" : {
+         "requires" : {
+            "Test::Exception" : "0",
+            "Test::More" : "0"
+         }
+      },
+      "configure" : {
+         "requires" : {
+            "Module::Build" : "0.36_14"
+         }
+      },
+      "runtime" : {
+         "requires" : {
+            "Test::Builder" : "0",
+            "perl" : "5.006"
+         }
+      }
+   },
+   "provides" : {
+      "Test::SetupTeardown" : {
+         "file" : "lib/Test/SetupTeardown.pm",
+         "version" : "0.001"
+      }
+   },
+   "release_status" : "stable",
+   "resources" : {
+      "repository" : {
+         "url" : "https://bitbucket.org/fgabolde/test-setupteardown"
+      }
+   },
+   "version" : "0.001"
+}
