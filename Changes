@@ -1,0 +1,12 @@
+0.002 Sat, Jan 05, 2012
+
+  [OTHER]
+
+  * Corrected licensing terms: from "restrictive" to "perl".  Forgot
+    to change licensing terms when SFR authorized liberation.
+
+0.001 Fri, Jan 04, 2012
+
+  [OTHER]
+
+  * Initial release to Bitbucket and CPAN.

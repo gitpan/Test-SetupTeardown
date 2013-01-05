@@ -1,0 +1,46 @@
+This archive contains the distribution Test-SetupTeardown:
+
+  Tiny Test::More-compatible module to group tests in clean
+  environments
+
+This software is copyright (c) 2012, 2013 SFR.
+
+This is free software; you can redistribute it and/or modify it under
+the same terms as the Perl 5 programming language system itself.
+
+* About Test-SetupTeardown
+
+This module provides very simple support for xUnit-style C<setup> and
+C<teardown> methods.  It is intended for developers who want to ensure
+their testing environment is in a known-good state before running
+their tests, and is left in an known-rather-okay state after.
+
+* About the authors
+
+This distribution was originally written by Uperto for SFR, a French
+ISP and telecom.
+
+* Installation
+ 
+This distribution supports installation via Module::Build:
+ 
+  perl Build.pl [OPTIONS]
+  ./Build
+  ./Build test
+  ./Build install
+ 
+Check out https://metacpan.org/module/Module::Build for documentation
+on how to use Module::Build installers.
+ 
+Alternatively, you can trust the various CPAN clients to pull the
+distribution and install it automagically, along with any dependencies
+you might be missing.
+ 
+* Bugs and complaints
+ 
+We have the usual RT queue on rt.cpan.org.
+ 
+* Contributing
+ 
+Our repository can be found on Bitbucket at
+https://bitbucket.org/fgabolde/test-setupteardown

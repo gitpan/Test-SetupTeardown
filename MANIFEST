@@ -1,6 +1,8 @@
 Build.PL
+Changes
 lib/Test/SetupTeardown.pm
 MANIFEST			This list of files
+README
 t/00-base.t
 t/kwalitee.t
 t/perl-critic.t

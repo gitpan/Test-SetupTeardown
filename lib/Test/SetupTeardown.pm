@@ -5,7 +5,7 @@ use warnings;
 
 use Test::Builder;
 
-our $VERSION = 0.001;
+our $VERSION = 0.002;
 
 sub new {
 
@@ -169,8 +169,9 @@ Fabrice Gabolde <fabrice.gabolde@uperto.com>
 
 =head1 COPYRIGHT AND LICENSE
 
-Copyright (C) 2012 SFR
+Copyright (C) 2012, 2013 SFR
 
-License TBD.
+This is free software; you can redistribute it and/or modify it under
+the same terms as the Perl 5 programming language system itself.
 
 =cut

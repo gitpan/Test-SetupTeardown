@@ -14,7 +14,7 @@ my $class = Module::Build->subclass(
 
 my $builder = $class->new(
     module_name         => 'Test::SetupTeardown',
-    license             => 'restrictive',
+    license             => 'perl',
     dist_author         => q{Fabrice Gabolde <fabrice.gabolde@uperto.com>},
     dist_version_from   => 'lib/Test/SetupTeardown.pm',
     dist_abstract       => 'Minimalist package to simplify writing unit tests with setup and teardown methods',
