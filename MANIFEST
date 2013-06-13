@@ -2,12 +2,13 @@ Build.PL
 Changes
 lib/Test/SetupTeardown.pm
 MANIFEST			This list of files
+META.json
+META.yml
 README
 t/00-base.t
+t/01-selecting-tests.t
 t/kwalitee.t
 t/perl-critic.t
 t/perlcriticrc
 t/pod-coverage.t
 t/pod-syntax.t
-META.yml
-META.json

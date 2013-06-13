@@ -5,7 +5,7 @@ use warnings;
 
 use Test::Builder;
 
-our $VERSION = 0.002;
+our $VERSION = 0.003;
 
 sub new {
 
@@ -25,6 +25,14 @@ sub run_test {
 
     my ($self, $description, $coderef) = @_;
     my $exception_while_running_block;
+
+    if ($ENV{TEST_ST_ONLY}
+        and $ENV{TEST_ST_ONLY} ne $description) {
+
+        # TEST_ST_ONLY is set for another test case
+        return;
+
+    }
 
     $self->{tbuilder}->note($description);
 
@@ -135,6 +143,16 @@ far (although it might become one).
 
 The description is displayed before the test results with
 L<Test::Builder>'s C<note()> method.
+
+A specific test run can be selected through the environment variable
+C<TEST_ST_ONLY>, e.g.:
+
+  TEST_ST_ONLY='reticulating splines' prove -lrvm t/
+
+This will cause all test cases not called "reticulating splines" to be
+completely skipped.  They will not count against the test plan, so if
+you're using this feature, be sure to use no plan and call
+C<done_testing> instead.
 
 =head1 BUGS AND LIMITATIONS
 
